@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <style>
+      body {
+        background-color: rgb(0, 183, 255);
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        border: 1px dark blue;
+      }
+      .container {
+        padding: 20px;
+        border: 2px solid white ;
+        border-radius: 10px;
+        max-width: 400px;
+        width: 100%;
+      }
+      h2 {
+        background-color: black;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: skyblue;
+      }
+      label {
+        display: inline-block;
+        margin: 0;
+        margin-bottom: 10px;
+        color: black;
+        font-size:25px;
+      }
+      input[type="text"] {
+        padding: 5px;
+        border: none;
+        border-bottom: 2px solid black;
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      input[type="submit"] {
+        font-size: 18px;
+        padding: 10px 20px;
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/submit" method="get">
+      <div class="container">
+        <h2>Name</h2>
+        <label for="name">Type  name</label>
+        <input type="text" id="name" name="name">
+
+        <h2>Message</h2>
+        <label for="message">Message</label>
+        <input type="text" id="message" name="message">
+
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </body>
+</html>
